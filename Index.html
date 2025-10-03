@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pallab Kumar Gorain - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .dark-mode { background-color: #0f172a; color: #f1f5f9; }
+    .light-mode { background-color: #ffffff; color: #1f2937; }
+  </style>
+</head>
+<body class="font-sans transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 backdrop-blur bg-white/80 dark:bg-gray-900/80 z-50">
+    <h1 class="font-bold text-lg">PKG</h1>
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+      <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="ml-4 border px-2 py-1 rounded">🌙</button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gray-100 dark:bg-gray-800 pt-20">
+    <img src="https://github.com/Pallab-office-LAW-1/Pallab-LAW-0ffice-/blob/86c7cf3b360349d078cac4176db61caf41887090/seedream-image.jpeg?raw=true" alt="Hero Image" class="w-40 h-40 rounded-full shadow-lg mb-4">
+    <h2 class="text-3xl font-bold">Advocate Pallab Kumar Gorain</h2>
+    <p class="mt-2 text-lg">Driven by passion, purpose, and professionalism in India's justice system.</p>
+    <div class="mt-6 flex gap-4">
+      <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 transition">Schedule Consultation</a>
+      <a href="resume.pdf" download class="border px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700">My Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="px-8 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-6">About Me</h3>
+      <img src="https://github.com/Pallab-office-LAW-1/Pallab-LAW-0ffice-/blob/86c7cf3b360349d078cac4176db61caf41887090/seedream-image%20(1).jpeg?raw=true" alt="About Image" class="mx-auto w-40 rounded-lg shadow-md mb-4">
+      <p class="leading-relaxed">I'm Pallab Kumar Gorain, a committed and enthusiastic law student currently pursuing my B.A.LL.B. degree from Imamul Hai Khan Law College, Bokaro. Alongside academics, I practice at Purulia District Court, West Bengal, focusing on litigation and constitutional law.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 dark:bg-gray-800 px-8 py-16">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-8">Areas of Legal Interest</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Criminal Law</div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Family Law</div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Constitutional Law</div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Property Law</div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Legal Drafting</div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded shadow hover:-translate-y-1 transition">Legal Research</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="px-8 py-16">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Academic Journey & Court Practice</h3>
+      <ul class="space-y-4">
+        <li><strong>21:</strong> Enrolled in B.A.LL.B. at Imamul Hai Khan Law College</li>
+        <li><strong>22:</strong> Started practice at Purulia District Court</li>
+        <li><strong>23:</strong> Legal Research using SCC Online & Indian Kanoon</li>
+        <li><strong>24:</strong> Advanced Legal Training in criminal and constitutional law</li>
+        <li><strong>25+:</strong> Preparing for independent legal practice</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 dark:bg-gray-800 px-8 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+      <p>Purulia Court, West Bengal • Phone: +91-8145760110 • Email: pallabgorain50@gmail.com</p>
+      <form action="https://formspree.io/f/mayvlpql" method="POST" class="mt-6 grid gap-4">
+        <input type="text" name="name" placeholder="Full Name *" required class="p-3 rounded border">
+        <input type="email" name="email" placeholder="Email Address *" required class="p-3 rounded border">
+        <input type="text" name="phone" placeholder="Phone Number *" class="p-3 rounded border">
+        <textarea name="message" placeholder="Brief Description *" required class="p-3 rounded border"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 transition">Send Appointment Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-8 py-6 text-center bg-gray-200 dark:bg-gray-900">
+    <p>© 2025 Pallab Kumar Gorain. All rights reserved.</p>
+    <a href="https://wa.me/qr/SOTWGEYA74EMM1" class="text-blue-600">WhatsApp</a>
+  </footer>
+
+  <!-- Script for Theme Toggle -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>
